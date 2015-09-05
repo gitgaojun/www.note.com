@@ -94,3 +94,37 @@ $home->Search();
 //  小结下，抽象类中的方法必须包含关键字 abstract ,继承的子类必须重写抽象类中的抽象方法。
 // 如果没有重写抽象方法那么就会报错，
 // fatal error: Class Index contains 1 abstract method and must therefore be declared abstract or implement the remaining methods (Index_ab::Search) in /home/wwwroot/www.note.com/class/abstract.php on line 90
+
+
+abstract class CommsManager
+{
+	abstract function getHeaderText();
+	abstract function getApptEncoder();
+	abstract function getTtdEncoder();
+	abstract function getContactEncoder();
+	abstract function getFooterText();
+}
+
+class BloggsCommsManager extends CommsManager
+{
+	function getHeaderText()
+	{
+		return "BloggsCal header\n";
+	}
+
+	function getApptEncode()
+	{
+		return new BloggsApptEncoder();
+	}
+
+	function getTtdEncoder()
+	{
+		return new BloggsTtdEncoder();
+	}
+
+	function getFooterText()
+	{
+		return "BloggsCal footer\n";
+	}
+}
+

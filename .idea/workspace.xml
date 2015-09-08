@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90daa6f0-34fd-46c0-a519-bbdc64815815" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/class/function.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/redis/redisAdmin/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\code\www.note.com\mysql\join\moreJoin.php" afterPath="$PROJECT_DIR$/mysql/join/groupBy.php" />
     </list>
     <ignored path="www.note.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -32,18 +33,48 @@
       <file leaf-file-name="threeTableJoin.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql/join/threeTableJoin.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1460">
-              <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+            <state vertical-scroll-proportion="-7.5172415" vertical-offset="622" max-vertical-offset="1460">
+              <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="groupBy.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/redis/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="340">
+              <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/redis/redisAdmin/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.30018762" vertical-offset="0" max-vertical-offset="533">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groupBy.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysql/join/groupBy.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.88461536" vertical-offset="540" max-vertical-offset="1540">
-              <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+            <state vertical-scroll-proportion="-15.172414" vertical-offset="540" max-vertical-offset="1540">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="function.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/class/function.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.724138" vertical-offset="0" max-vertical-offset="620">
+              <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -61,6 +92,9 @@
         <option value="$PROJECT_DIR$/mysql/join/threeTableJoin.php" />
         <option value="$PROJECT_DIR$/mysql/join/moreJoin.php" />
         <option value="$PROJECT_DIR$/mysql/join/groupBy.php" />
+        <option value="$PROJECT_DIR$/class/function.php" />
+        <option value="$PROJECT_DIR$/redis/index.php" />
+        <option value="$PROJECT_DIR$/redis/redisAdmin/index.php" />
       </list>
     </option>
   </component>
@@ -125,7 +159,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
+              <option name="myItemId" value="redis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -139,11 +173,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="mysql" />
+              <option name="myItemId" value="redis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="join" />
+              <option name="myItemId" value="redisAdmin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -294,18 +328,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/join/threeTableJoin.php">
+    <entry file="file://$PROJECT_DIR$/class/function.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="622" max-vertical-offset="1460">
-          <caret line="47" column="66" selection-start-line="47" selection-start-column="66" selection-end-line="47" selection-end-column="66" />
+        <state vertical-scroll-proportion="-11.724138" vertical-offset="0" max-vertical-offset="620">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mysql/join/groupBy.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.88461536" vertical-offset="540" max-vertical-offset="1540">
-          <caret line="50" column="7" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        <state vertical-scroll-proportion="-15.172414" vertical-offset="540" max-vertical-offset="1540">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysql/join/threeTableJoin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.5172415" vertical-offset="622" max-vertical-offset="1460">
+          <caret line="42" column="0" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.5172415" vertical-offset="0" max-vertical-offset="340">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/redis/redisAdmin/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30018762" vertical-offset="0" max-vertical-offset="533">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding />
         </state>
       </provider>

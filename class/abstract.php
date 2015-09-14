@@ -128,3 +128,17 @@ class BloggsCommsManager extends CommsManager
 	}
 }
 
+// abstract 抽象方法里面会有 定义参数。看看是否是继承后一定要定义相同的参数
+abstract class people
+{
+	public abstract function setName($user_name);
+}
+class p extends people
+{
+	public function setName()
+	{
+
+	}
+}
+$pp = new p();
+

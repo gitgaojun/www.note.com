@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>学习使用jquery表单验证</title>
+<script type="text/javascript" src="../jquery-1.11.2.js"></script>
+<script type="text/javascript" src="jquery.validate.js"></script>
+
+</head>
+<body>
+<form id="addForm">
+<table boder="1">
+	<tr>
+		<td>名字</td>
+		<td><input type="text" name="user_name" id="user_name" /></td>
+	</tr>
+	<tr>
+		<td>phone</td>
+		<td><input type="text" name="user_phone" id="user_phone" /></td>
+	</tr>
+	<tr>
+		<td>email</td>
+		<td><input type="text" name="user_email" id="user_email" /></td>
+	</tr>
+	<tr>
+		<td>url</td>
+		<td><input type="text" name="user_url" id="user_url" /></td>
+	</tr>
+	<tr>
+		<td colspan="2"><input type="submit" value="提交" class="submit"/></td>
+	</tr>
+</table>
+</form>
+class="submit" form的id 一定要设置
+html5 不能识别 type="text/javascript" 所以写js的时候不要书写
+messages 注意不能掉s
+<script>
+
+$(document).ready(function(){
+		
+		$("#addForm").validate({
+			rules:{
+				user_name:"required",
+				user_phone:"required",
+				user_email:"required",
+				user_url:"required"
+			},
+			messages:{
+				user_name:"请输入名字",
+				user_phone:"请输入手机号",
+				user_email:"请输入email",
+				user_url:"请输入url地址"
+			},
+			submitHandler:function(form){
+			// ajax 提交
+				//alert(22221212);return false;
+				$.ajax({
+					url:'/form/validation/index.html',
+					type:"post",
+					dataType:"json",
+					data:$("addForm").serialize(),
+					success:function(){
+						alert('ok');
+						return false;
+					}
+					
+				});
+			}
+		}); 
+
+});
+
+
+</script>
+</body>
+</html>

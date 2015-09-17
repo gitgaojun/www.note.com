@@ -58,8 +58,8 @@ $(document).ready(function(){
 					url:'/form/validation/index.html',
 					type:"post",
 					dataType:"json",
-					data:$("addForm").serialize(),
-					success:function(){
+					data:$("#addForm").serialize(),
+					success:function(data){
 						alert('ok');
 						return false;
 					}

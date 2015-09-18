@@ -26,6 +26,14 @@
 		<td>url</td>
 		<td><input type="text" name="user_url" id="user_url" /></td>
 	</tr>
+    <tr>
+        <td>password</td>
+        <td><input type="password" name="user_pwd" id="user_pwd" /></td>
+    </tr>
+    <tr>
+        <td>确认密码</td>
+        <td><input type="password" name="user_tpwd" id="user_tpwd"></td>
+    </tr>
 	<tr>
 		<td colspan="2"><input type="submit" value="提交" class="submit"/></td>
 	</tr>
@@ -40,16 +48,59 @@ $(document).ready(function(){
 		
 		$("#addForm").validate({
 			rules:{
-				user_name:"required",
-				user_phone:"required",
-				user_email:"required",
-				user_url:"required"
+				user_name:{
+                    required:true,
+                    rangelength:[1,10]/*汉字算一个字符*/
+                },
+				user_phone:{
+                    required:true,
+                    digits:true
+                },
+				user_email:{
+                    required:true,
+                    email:true
+                },
+				user_url:{
+                    required:true,
+                    url:true
+                },
+                user_pwd:{
+                    required:true,
+                    minlength:5
+                },
+                user_tpwd:{
+                    required:true,
+                    minlength:5,
+                    equalTo:"#user_pwd"
+                }
+
 			},
 			messages:{
-				user_name:"请输入名字",
-				user_phone:"请输入手机号",
-				user_email:"请输入email",
-				user_url:"请输入url地址"
+				user_name:{
+                    required:"请输入名字",
+                    rangelength:"1~10个字符"
+                },
+				user_phone:{
+                    required:"请输入手机号",
+                    digits:"只能输入整数"
+                },
+				user_email:{
+                    required:"请输入email",
+                    email:"请输入正确格式的电子邮件"
+                },
+				user_url:{
+                    required:"请输入url地址",
+                    url:"请输入合法的网址"
+                },
+                user_pwd:{
+                    required:"请输入密码",
+                    minlength:"密码不能小于｛5｝个字符"
+                },
+                user_tpwd:{
+                    required:"请输入确认密码",
+                    minlength:"确认密码不能小于｛5｝个字符",
+                    equalTo:"两次确认密码不一致"
+                }
 			},
 			submitHandler:function(form){
 			// ajax 提交

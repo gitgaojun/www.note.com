@@ -55,7 +55,7 @@ $(document).ready(function(){
             // ajax 提交
             //alert(22221212);return false;
             $.ajax({
-                url:'/form/validation/index.html',
+                url:'http://www.note.com/redis/redisAdmin/login.php',
                 type:"post",
                 dataType:"json",
                 data:$("#addForm").serialize(),

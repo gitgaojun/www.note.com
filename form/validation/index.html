@@ -43,14 +43,18 @@ class="submit" form的id 一定要设置
 html5 不能识别 type="text/javascript" 所以写js的时候不要书写
 messages 注意不能掉s
 <script>
-
+/*添加自定义验证方法*/
+jQuery.validator.addMethod('notEmpty',function(value){
+		return value.indexOf(" ") >= 0 ? false : true;
+}, "不能输入空格字符");
 $(document).ready(function(){
 		
 		$("#addForm").validate({
 			rules:{
 				user_name:{
                     required:true,
-                    rangelength:[1,10]/*汉字算一个字符*/
+                    rangelength:[1,10],/*汉字算一个字符*/
+					notEmpty:true
                 },
 				user_phone:{
                     required:true,
@@ -78,7 +82,8 @@ $(document).ready(function(){
 			messages:{
 				user_name:{
                     required:"请输入名字",
-                    rangelength:"1~10个字符"
+                    rangelength:"1~10个字符",
+					notEmpty:"不能包含空格字符"
                 },
 				user_phone:{
                     required:"请输入手机号",

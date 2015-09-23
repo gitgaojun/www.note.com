@@ -1,4 +1,13 @@
 <?php
+/**
+ * redis 验证用户登录信息
+ *
+ * @since 2015-9-23 23:00
+ * @author jun
+ * @package  login.php
+ * @link   www.note.com/redis/redisAdmin/login.php
+ */
+
 
 ########## redis 连接 #######################################################################
 $redis = new redis();
@@ -22,3 +31,15 @@ if(empty($user_pwd))
 
 
 $user_id = $redis->get('user_email:' . $user_email);
+$user_list = $redis->hmget('user_id:'.$user_id);
+if($user_list['user_pwd'] === md5($user_pwd))
+{
+	$result['status'] = true;
+}
+else
+{
+	$result['msg'] = '密码错误';
+	die(json_encode($result, true));
+}
+
+die(json_encode($result, true));

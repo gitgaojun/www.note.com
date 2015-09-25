@@ -12,13 +12,16 @@
     <div class="header clearfix">
         <ul class="nav nav-pills pull-right">
             <li class="active" role="presentation">
-                <a href="http://www.note.com/redis/redisAdmin/home.php">Home</a>
+                <a href="http://www.note.com/redis/redisAdmin/app.php">Home</a>
             </li>
             <li role="presentation">
                 <a href="#">About</a>
             </li>
             <li role="presentation">
                 <a href="#">Contact</a>
+            </li>
+            <li role="presentation">
+                <a href="http://www.note.com/redis/redisAdmin/sign_up.php">登录</a>
             </li>
         </ul>
         <h3>redis-php</h3>

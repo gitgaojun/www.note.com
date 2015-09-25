@@ -10,7 +10,7 @@
  * @link  www.note.com/class/time.php
  */
 
-if( !function_exists("getEachWeekDay") )
+if( !function_exists("getWeekDays") )
 {
 	/**
 	 * 获取string格式日期的一周日期数组

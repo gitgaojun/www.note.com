@@ -1,3 +1,13 @@
+<?php
+
+    session_start();
+    if(!empty($_SESSION['user_name']))
+    {
+        $user_name = $_SESSION['user_name'];
+    }
+
+
+?>
 <!doctype html>
 <html lang="ch_CN">
 <head>
@@ -21,7 +31,7 @@
                 <a href="#">Contact</a>
             </li>
             <li role="presentation">
-                <a href="http://www.note.com/redis/redisAdmin/sign_up.php">登录</a>
+                <a href="http://www.note.com/redis/redisAdmin/sign_up.php"><?php if(empty($user_name)){echo "登录";}else{echo "你好：{$user_name}";} ?></a>
             </li>
         </ul>
         <h3>redis-php</h3>

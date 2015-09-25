@@ -25,13 +25,50 @@
         </form>
     </div>
 </div>
+<!--模态框start-->
+<div class="modal fade" id="myModel" tabindex="-1" role="dialog"
+     aria-labelledby="myModelLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close"
+                        data-dismiss="modal" aria-hidden="true">&times;
+                </button>
+                <h4 class="modal-title" id="myModalLabel">
+                    注册
+                </h4>
+            </div>
+            <div class="modal-body">
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default"
+                        data-dismiss="model" id="guangbi">
+                    关闭
+                </button>
+                <button type="button" class="btn btn-primary" id="queding">
+                    确定
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--模态框end-->
 <script src="../../form/jquery-1.11.2.js"></script>
 <script src="../../js/bootstrap-3.3.5-dist/js/bootstrap.js"></script>
 <script src="../../form/validation/jquery.validate.js"></script>
 <script>
 $(document).ready(function(){
-
-
+    function showTime(){
+        t -= 1;
+        document.getElementById('showtimes').innerHTML= t;
+        if(t==0){
+            location.href='error404.asp';
+        }
+        //每秒执行一次,showTime()
+        setTimeout("showTime()",1000);
+    }
     $("#logForm").validate({
         rules:{
             user_email:{
@@ -58,10 +95,38 @@ $(document).ready(function(){
                 url:'http://www.note.com/redis/redisAdmin/login.php',
                 type:"post",
                 dataType:"json",
-                data:$("#addForm").serialize(),
+                data:$("#logForm").serialize(),
                 success:function(data){
-                    alert('ok');
-                    return false;
+                    if(data.status)
+                    {
+                        window.location.href = 'http://www.note.com/redis/redisAdmin/app.php';
+                        $("#guangbi").bind('click', function(){
+                            $('#myModel').modal('hide');// 点击关闭按钮的时候关闭模态框
+                        });
+
+                        $('#queding').css('display','none');
+
+                        $(".modal-title").text('用户你好'); // 模态框标题
+                        $(".modal-body").text("登录成功页面即将（5s）跳转首页");//模态框内容
+                        var i=5
+                        $("#myModel").modal('show');//  手动打开模态框
+                        function showTime()
+                        {
+                            --i;
+                            if(i>0){
+                                $(".modal-body").html("登录成功页面即将\<span style='color:red;font-weight: bold;'>（"+i+"s）</span>跳转首页");
+                                setTimeout("showTime",1000);
+                            }else{
+                                $('#myModel').modal('hide');
+                                return false;
+                            }
+                        }
+                        return true;
+                    }else
+                    {
+                        alert(data.msg);
+                        return false;
+                    }
                 }
 
             });

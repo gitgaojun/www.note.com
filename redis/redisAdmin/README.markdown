@@ -1311,7 +1311,7 @@ $redis->migrate('backup', 6379, 'foo', 0, 3600, false, true); /* just REPLACE fl
 * [hDel](#hdel) - Delete one or more hash fields
 * [hExists](#hexists) - Determine if a hash field exists
 * [hGet](#hget) - Get the value of a hash field
-* [hGetAll](#hgetall) - Get all the fields and values in a hash
+* [hGetAll](#hgetall) - 得到哈希表的键值对
 * [hIncrBy](#hincrby) - Increment the integer value of a hash field by the given number
 * [hIncrByFloat](#hincrbyfloat) - Increment the float value of a hash field by the given amount
 * [hKeys](#hkeys) - Get all the fields in a hash
@@ -1469,7 +1469,7 @@ The order is random and corresponds to redis' own internal representation of the
 
 ### hGetAll
 -----
-_**Description**_: Returns the whole hash, as an array of strings indexed by strings.
+_**Description**_: 返回全部的哈希表, 以一个字符串键值和字符串值组成的数组返回.
 
 ##### *Parameters*
 *Key*: key

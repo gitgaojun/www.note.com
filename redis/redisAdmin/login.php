@@ -29,17 +29,25 @@ if(empty($user_pwd))
     die(json_encode($result, true));
 }
 
-
+########### redis 获取用户信息 ##########################################################################
 $user_id = $redis->get('user_email:' . $user_email);
-$user_list = $redis->hmget('user_id:'.$user_id);
-if($user_list['user_pwd'] === md5($user_pwd))
+$user_list = $redis->hGetAll('user_id:'.$user_id);
+/*hGetAll 取出一个哈希表所有数据*/
+//var_dump($user_list);exit;
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+if($user_list['user_pwd'] !== $user_pwd)
 {
-	$result['status'] = true;
-}
-else
-{
-	$result['msg'] = '密码错误';
-	die(json_encode($result, true));
+    $result['msg'] = '密码错误';
+    die(json_encode($result, true));
 }
 
+########## session 保存用户信息 ########################################################################
+session_start();
+$_SESSION['user_id'] = $user_id;
+$_SESSION['user_name'] = $user_list['user_name'];
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+$result['status'] = true;
 die(json_encode($result, true));

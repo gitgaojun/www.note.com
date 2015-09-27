@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <title>学习使用jquery表单验证</title>
+<link rel="stylesheet" href="validation.css" />
 <script type="text/javascript" src="../jquery-1.11.2.js"></script>
 <script type="text/javascript" src="jquery.validate.js"></script>
 
@@ -13,35 +14,86 @@
 	<tr>
 		<td>名字</td>
 		<td><input type="text" name="user_name" id="user_name" /></td>
+		<td class="status"></td>
 	</tr>
 	<tr>
 		<td>phone</td>
 		<td><input type="text" name="user_phone" id="user_phone" /></td>
+		<td class="status"></td>
 	</tr>
 	<tr>
 		<td>email</td>
 		<td><input type="text" name="user_email" id="user_email" /></td>
+		<td class="status"></td>
 	</tr>
 	<tr>
 		<td>url</td>
 		<td><input type="text" name="user_url" id="user_url" /></td>
+		<td class="status"></td>
 	</tr>
     <tr>
         <td>password</td>
         <td><input type="password" name="user_pwd" id="user_pwd" /></td>
+		<td class="status"></td>
     </tr>
     <tr>
         <td>确认密码</td>
         <td><input type="password" name="user_tpwd" id="user_tpwd"></td>
+		<td class="status"></td>
     </tr>
+	<tr>
+		<td>性别</td>
+		<td>
+			<label for="gender_male">
+				男<input type="radio" id="gender_male" value="m" name="gender"> 
+			</label>
+			<label for="gender_female">
+				女<input type="radio" id="gender_female" value="f" name="gender">
+			</label>
+		</td>
+		<td class="status">
+		</td>
+	</tr>
+	<tr>
+		<td>
+			省
+		</td>
+		<td>
+			<select name="addr">
+				<option value="0">请选择</option>
+				<option value="1">广州</option>
+				<option value="2">湖北</option>
+			</select>	
+		</td>
+		<td class="status">
+		</td>
+	</tr>
+	<tr>
+		<td>关注</td>
+		<td>
+			<label>
+				财经<input type="checkbox" value="1" name="likesize[]" />
+			</label>
+			<label>
+				运动<input type="checkbox" value="2" name="likesize[]" />
+			</label>	
+			<label>
+				军事<input type="checkbox" value="3" name="likesize[]" />
+			</label>
+		</td>
+		<td class="status">
+		</td>
+	</tr>
 	<tr>
 		<td colspan="2"><input type="submit" value="提交" class="submit"/></td>
 	</tr>
+
 </table>
 </form>
 class="submit" form的id 一定要设置
 html5 不能识别 type="text/javascript" 所以写js的时候不要书写
 messages 注意不能掉s
+通过name来定位元素
 <script>
 /*添加自定义验证方法*/
 jQuery.validator.addMethod('notEmpty',function(value){
@@ -76,8 +128,20 @@ $(document).ready(function(){
                     required:true,
                     minlength:5,
                     equalTo:"#user_pwd"
-                }
+                },
+				gender:{
+					required:true
+				},
+				addr:{
+					required:true,
+					min:'1'		 
+				},
+				"likesize[]":{
+					required:true,
+				    minlength:"2"
+				}
 
+			
 			},
 			messages:{
 				user_name:{
@@ -105,8 +169,30 @@ $(document).ready(function(){
                     required:"请输入确认密码",
                     minlength:"确认密码不能小于｛5｝个字符",
                     equalTo:"两次确认密码不一致"
-                }
+                },
+				gender:{
+					required:"请选择"
+				},
+				addr:{
+					required:"请选择",
+					min:"请选择地址"		 
+				},
+				"likesize[]":{
+					required:"请选择",
+					minlength:"至少选择2种"		 
+				}
 			},
+errorPlacement:function(error, element){
+				   if(element.is(":radio")){
+					   //console.log(element.parent().parent());
+					   error.appendTo(element.parent().parent().next());
+				   }else if(element.is(":checkbox")){
+					   error.appendTo(element.parent().parent().next());
+				   }
+				   else{
+					   error.appendTo(element.parent().next());
+				   }
+			   },
 			submitHandler:function(form){
 			// ajax 提交
 				//alert(22221212);return false;

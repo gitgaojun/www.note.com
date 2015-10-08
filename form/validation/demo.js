@@ -10,7 +10,8 @@ $(document).ready(function(){
 	 * @author jun
 	 * @return bool
 	 */
-	function addError(e, t, s=false){
+	function addError(e, t, s){
+        if(!arguments[2]) s=false;
 		if(s){
 			t='请填写该项';
 		}
@@ -38,7 +39,8 @@ $(document).ready(function(){
 	 * @author jun
 	 * @return bool
 	 */
-	function noEmpty(e, t, s=false){
+	function noEmpty(e, t, s){
+        if(!arguments[2]) s=false;
 		var text = $(e).val().length;
 		removeError(e);
 		if(text){
@@ -62,7 +64,8 @@ $(document).ready(function(){
 	 * @author jun
 	 * @return boolear
 	 */
-	function isEmail(e, t, s=false){
+	function isEmail(e, t, s){
+        if(!arguments[2]) s=false;
 		var text = $(e).val();
 		var er = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[a-zA-Z0-9]+$/g;
 		var isOk = er.test(text);
@@ -87,7 +90,8 @@ $(document).ready(function(){
 	 * @author jun
 	 * @return boolear
 	 */
-	function isPhone(e, t, s=false){
+	function isPhone(e, t, s){
+        if(!arguments[2]) s=false;
 		var text = $(e).val();
 		var er=/^1\d{10}$/g;
 		var isOk = er.test(text);
@@ -123,8 +127,18 @@ $(document).ready(function(){
 		}
 	}
 		
-	function isBlank(e, t, s=false){
-		
+	function isBlank(e, t, s){
+        var text = $(e).val();
+        var er = text.indexOf(" ");
+        alert(er);
+        var isOk = er > 0 ? false : true;
+        if(isOk){
+            return true;
+        }else{
+            if(s) addError(e, t);
+            else addError(e);
+            return false;
+        }
 	}
 
 	$("#sub").click(function(){
@@ -132,7 +146,7 @@ $(document).ready(function(){
 		noEmpty("#u_email", '请填写e-mail地址', true) && isEmail("#u_email", '请填写正确的邮箱地址', true);
 		noEmpty("#u_phone", '请填写手机号码', true) && isPhone("#u_phone", '手机格式错误', true);
 		/*密码：6-14个字符，数字大小写字母和标点符号，不允许有空格*/
-		noEmpty("#u_pwd", '请填写密码', true) && isLength('#u_pwd', 6, 14); && isBlank("#u_pwd", '不允许有空格', true);
+		noEmpty("#u_pwd", '请填写密码', true) && isLength('#u_pwd', 6, 14) && isBlank("#u_pwd", '不允许有空格', true);
 		
 	});
 });

@@ -40,4 +40,4 @@ $bObject = new people(4);
 people::setHandNum(8);
 $aObject::getHandNum();
 $bObject::getHandNum();
-// output 2 4 8 8 8 
+// output 2 4 8 8 8

@@ -38,12 +38,14 @@ create table `order_items`(
 	start transaction;
 
 client1
-start transaction
-insert into `order` values(11, '58.89', 1235, '2015-10-16');
-insert into `order_items` values(11, 'ZQ1234705', 1);
+start transaction;
+insert into `order`(`orderid`, `money`, `userid`, `date`) value(11, '58.89', 1235, '2015-10-16');
+insert into `order_items`(`orderid`, `code`, `number`) value(11, 'ZQ1234705', 1);
 
 client2
 select * from `order`;
+
+没有结果，查询为空
 
 client1
 commit;
@@ -51,8 +53,25 @@ commit;
 client2
 select * from `order`;
 
+有值
 
+	回滚数据
+client1
+rollback;
+client2
+select * from `order`;
+还是有值，说明要在数据提交之前回滚才有效。
 
+client1
+start transaction;
+insert into `order`(`orderid`, `money`, `userid`, `date`) value(11, '58.89', 1235, '2015-10-16');
+insert into `order_items`(`orderid`, `code`, `number`) value(11, 'ZQ1234705', 1);
+select * from `order`;#有值
+select * from `order_items`;
+rollback;
+select * from `order`;#没有
+select * from `order_items`;
+2个表都没有数据说明，事务具有 原子性，作为一个整体来对待，要么都执行要么都不执行
 
 EOF;
 

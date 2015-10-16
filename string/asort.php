@@ -7,7 +7,7 @@
  */
 
 $a = 123;
-$b = strrev($a);
+$b = (int)strrev($a);
 echo $b . "\n";
 
 $c = 659;

@@ -1,7 +1,7 @@
 <?php
 header('content-type:text/html;charset=utf-8');
-
-echo >>>EOF
+echo "<pre>";
+echo <<<EOF
 
 	创建订单表和订单详情表
 	订单表记录总价格和时间，订单详情表记录详细商品和数目

@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html leng="ch_CN">
+<head>
+<meta charset="utf-8" />
+<title>jq抓取最后一个li</title>
+</head>
+<body>
+<ul>
+	<li>a</li>
+	<li>b</li>
+	<li>c</li>
+</ul>
+<script src="../form/jquery-1.11.2.js"></script>
+<script>
+$(document).ready(function(){
+	var text = $("li:eq(-1)").text();
+
+	alert(text);
+});
+</script>
+</body>
+</html>
+

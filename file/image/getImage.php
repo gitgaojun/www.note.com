@@ -5,44 +5,29 @@ echo "<pre>";
 
 //var_dump($_FILES['ima']['tmp_name']);exit;
 
-$fp = fopen($_FILES['ima']['tmp_name'], "rb");
+$fp_ima = fopen($_FILES['ima']['tmp_name'], "rb");
+$fp_img = fopen($_FILES['img']['tmp_name'], "rb");
 
+$buf_ima = fread($fp_ima, $_FILES['ima']['size']);
+$buf_img = fread($fp_img, $_FILES['img']['size']);
 
-$buf = fread($fp, $_FILES['ima']['size']);
+$buf_ima = base64_encode($buf_ima);
+$buf_img = base64_encode($buf_img);
 
-// $buf = addslashes(fread($fp, $_FILES['ima']['size'])); 是错误写法，那么的图片流转义后，不能被使用，会导致图片不能正常被访问
+$result = array('website'=>'note', 'imgstr'=>$buf_ima.'||||'.$buf_img);
 
-//var_dump($buf);
+$ch = curl_init();
 
-// $buf 就是二进制文件流
+$url = 'http://www.note.com/file/image/saveImgApi.php';
+curl_setopt($ch, CURLOPT_URL, $url);
+curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_HEADER, 0);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($ch, CURLOPT_POSTFIELDS, $result);
+$data = curl_exec($ch);
+curl_close($ch);
 
-
-/**
- * 二进制文件保存成图片
- *
- * @since 2015-11-9
- * @author jun
- * @param string $dxycontent 二进制文件流
- * @param string $filepath   文件存放位置
- * @param string $filename   文件保存名字
- * @return bool
- */
-function imgSave($dxycontent, $filepath, $filename)
-{
-	$file = fopen($filepath . $filename, "w+"); //打开文件准备写入
-	fwrite($file, $dxycontent); //写入
-	fclose($file); // 关闭
-	
-	return true;
-
-}
-if(imgSave($buf, '/home/jun/下载/img/', 'hello.jpg'))
-{
-	echo "成功";
-}else{
-	echo "失败";
-}
-
+print_r($data);
 
 
 

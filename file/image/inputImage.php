@@ -7,6 +7,7 @@
 <body>
 <form enctype="multipart/form-data" action="http://www.note.com/file/image/getImage.php" method="post">
 <input type="file" name="ima">
+<input type="file" name="img">
 <input type="submit" value="提交">
 </form>
 

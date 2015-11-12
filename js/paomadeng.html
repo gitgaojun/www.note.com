@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="ch_CN">
+<head>
+<meta charset="utf-8" />
+<title>跑马灯</title>
+<style>
+.hezi{
+margin-left:200px;	
+width:900px;
+position:relative;
+}
+ul{
+margin-top:0px;
+list-style:none;
+}
+.touul{
+display:block;
+}
+.touul li{
+width:200px;
+height:30px;
+display:block;
+float:left;
+background-color:grey;
+color:white;
+cursor:pointer;
+padding:4px;
+}
+.touul li:hover{
+background-color:black;
+color:white;
+}
+img{
+width:200px;
+height:300px;
+}
+.tu{
+	display:block;
+	width:800px;
+	height:300px;
+	overflow:hidden;
+	position:relative;
+}
+.tu ul{
+	display:block;
+	overflow:hidden;
+	position:absolute;
+	height:300px;
+	width:1650px;
+}
+.tu ul li{
+	display:block;float:left;
+	position:relative;
+}
+.left, .right{
+	display:block;
+	cursor:pointer;
+}
+</style>
+
+<script src="http://www.note.com/js/jquery-1.11.2.js"></script>
+</head>
+<body>
+<div class="hezi">
+	<div class="hezitou">
+		<ul class="touul">
+			<li>美女图片</li>
+			<li>山水图片</li>
+			<li>植物图片</li>
+			<li>动物图片</li>
+		</ul>
+	</div>
+	<div class="tupian" id="tupian">
+		<span class="left">left</span>
+		<span class="right">right</span>
+		<div class="meinv tu" id="meinv">
+			<ul>
+				<li class=""><img src="http://www.note.com/js/image/n1.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/n2.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/n3.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/n4.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/n5.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/n6.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/n7.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/n8.jpg"></li>
+			</ul>
+		</div>
+		<div class="fengjing tu">
+			<ul>
+				<li class=""><img src="http://www.note.com/js/image/f1.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/f2.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/f3.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/f4.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/f5.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/f6.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/f7.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/f8.jpg"></li>
+			</ul>
+		</div>
+		<div class="zhiwu tu">
+			<ul>
+				<li class=""><img src="http://www.note.com/js/image/z1.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/z2.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/z3.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/z4.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/z5.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/z6.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/z7.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/z8.jpg"></li>
+			</ul>
+		</div>
+		<div class="dongwu tu">
+			<ul>
+				<li class=""><img src="http://www.note.com/js/image/m1.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/m2.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/m3.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/m4.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/m5.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/m6.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/m7.jpg"></li>
+				<li class=""><img src="http://www.note.com/js/image/m8.jpg"></li>
+			</ul>
+		</div>
+	</div>	
+
+	<div id="ddd" style="position:relative;"><span id="aaa">dddddddddddddddddddddddddddd</span></div>
+	<button id="ss">ss</button>
+</div>
+<script>
+$(document).ready(function(){
+		$(".tu").each(function(index){
+			if(index===0)
+				$(this).show();
+			else $(this).hide();
+			
+		});alert(2);
+		$("#ss").click(function(){alert(4);
+
+			$('#meinv ul').stop(true, false).animate({"left":-880},300);
+			});alert(3);	
+
+		var sWidth = $(".tu").width(); // 焦点图宽度
+		var sWidth = 800
+		//alert(sWidth);
+		//var len = $(".tu ul li").length; // 焦点图个数
+		var len=2;
+		var index=0;						
+		var picTimer;//时间
+		$(".tu ul").css("width", sWidth*(len));//外围ul的宽度
+
+		// 鼠标移入停止自动播放，滑出开始自动播放
+		$("#tupian").hover(function(){ // 需要id来定位才有用
+			clearInterval(picTimer);
+		}, function(){
+			picTimer=setInterval(function(){
+				showPics(index);
+				index++;
+				if(index == len){
+					index=0;
+				}
+			},4000)
+		}).trigger("mouseleave");
+
+		// left 点击事件
+		$(".left").click(function(){
+			index -=1;
+			if(index==-1){
+				index=len-1;
+			}
+			showPics(index);
+		});
+
+		// right 点击事件
+		$(".right").click(function(){
+			index +=1;
+			if(index==len){
+				index=0;
+			}
+			showPics(index);
+		});
+
+
+		// 显示图片函数，根据接受的Index值显示相应的内容
+		function showPics(index){
+			var nowLeft = -index*sWidth;
+			
+			$('#meinv ul').stop(true, false).animate({"left":nowLeft},300);
+		}
+		
+});
+
+</script>
+</body>
+</html>
+

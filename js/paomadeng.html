@@ -128,16 +128,20 @@ height:300px;
 </div>
 <script>
 $(document).ready(function(){
-		$(".tu").each(function(index){
-			if(index===0)
-				$(this).show();
-			else $(this).hide();
+		//$(".touul li").click(
 			
-		});alert(2);
-		$("#ss").click(function(){alert(4);
+		//	function(){
+		//		var num = $(this).index();
+		//		$('.tu').hide();
+		//		
+		//		$('.tu').eq(num).show();
+		//	}
+		//	
+		//);
+		$("#ss").click(function(){
 
 			$('#meinv ul').stop(true, false).animate({"left":-880},300);
-			});alert(3);	
+			});
 
 		var sWidth = $(".tu").width(); // 焦点图宽度
 		var sWidth = 800
@@ -146,11 +150,22 @@ $(document).ready(function(){
 		var len=2;
 		var index=0;						
 		var picTimer;//时间
+		var ele = 0;//第几个选择项
 		$(".tu ul").css("width", sWidth*(len));//外围ul的宽度
-
+		
+		$(".touul li").click(
+			
+			function(){
+				var num = $(this).index();
+				$('.tu').hide();
+				
+				$('.tu').eq(num).show();
+			}
+			
+		);
 		// 鼠标移入停止自动播放，滑出开始自动播放
-		$("#tupian").hover(function(){ // 需要id来定位才有用
-			clearInterval(picTimer);
+		$(".tu ul").eq(ele).hover(function(){ // 需要id来定位才有用
+			clearInterval(picTimer);//alert(ele);
 		}, function(){
 			picTimer=setInterval(function(){
 				showPics(index);
@@ -184,7 +199,8 @@ $(document).ready(function(){
 		function showPics(index){
 			var nowLeft = -index*sWidth;
 			
-			$('#meinv ul').stop(true, false).animate({"left":nowLeft},300);
+			//$('#meinv ul').stop(true, false).animate({"left":nowLeft},300);
+			$('.tu ul').eq(ele).stop(true, false).animate({"left":nowLeft},300);
 		}
 		
 });

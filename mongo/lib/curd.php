@@ -19,10 +19,11 @@ class curd extends conn
 
 	/**
 	 * 选择文档
+	 * MongoClient->test_db->test_colleciton
 	 */
 	public function setCollection($db_name,$collection_name)
 	{
-		$this->collection = $this->link->test->test_goods;
+		$this->collection = $this->link->$db_name->$collection_name;
 	}
 
 	/**
@@ -34,6 +35,23 @@ class curd extends conn
 	public function findOne($condition=array())
 	{
 		$result = $this->collection->findOne($condition);
+		return $result;
+	}
+
+	/**
+	 * 获取所有的记录数据
+	 *
+	 * @param array $condition 筛选条件
+	 * @param array $fields 返回结果的字段 array('fieldname' => true, 'fieldname2' => true)
+	 * @return array 返回搜索结果的游标
+	 */
+	public function findAll($condition=array(), $fields=array())
+	{
+		$cursor = $this->collection->find($condition, $fields);//find 返回结果集
+		foreach($cursor as $doc)
+		{
+			$result[] = $doc;
+		}
 		return $result;
 	}
 }

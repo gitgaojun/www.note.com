@@ -1,4 +1,4 @@
-<?php
+<?php 
 /**
  * 测试mongodb 基类
  *
@@ -15,9 +15,34 @@ $mongo->setCollection('test','test_goods');
 
 //$allList = $mongo->findAll();
 //var_export($allList);exit;
-$getGoods = $mongo->findAll(array('goods_id'=>3), array('goods_id'=>true,'promote_price'=>true));
-echo "<pre>";
-var_export($getGoods);exit;
+//$getGoods = $mongo->findAll(array('goods_id'=>3), array('goods_id'=>true,'promote_price'=>true));
+//echo "<pre>";
+//var_export($getGoods);exit;
 
 
+
+$condition = array(
+	array(
+		'$match'=>array(
+			'goods_id'=>array('$gt'=>5)
+		)
+	),
+	array(
+		'$project'=>array(
+			'goods_id'=>1,
+			'promote_price'=>1,
+			//'kk'=>1, 没有该字段不会报错，也不会显示
+			'lv'=>array('$divide'=>array('$shop_price', '$promote_price'))
+		
+		),
+	),
+	array(
+			'$sort'=>array('lv'=>1),
+		),
+	array(
+			'$limit'=>3
+	),		
+);
+$list = $mongo->aggregate($condition);
+var_dump($list);
 

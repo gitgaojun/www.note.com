@@ -54,6 +54,19 @@ class curd extends conn
 		}
 		return $result;
 	}
+
+	/**
+	 * 聚合查询
+	 *
+	 * @param array $condition
+	 * @return array
+	 */
+	public function aggregate($condition=array())
+	{
+
+		$result = $this->collection->aggregate($condition);
+		return $result;
+	}
 }
 
 

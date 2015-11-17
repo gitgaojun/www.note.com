@@ -25,11 +25,13 @@ $condition = array(
 	array(
 		'$match'=>array(
 			'goods_id'=>array('$gt'=>5)
+			//'goods_id'=>7
 		)
 	),
 	array(
 		'$project'=>array(
 			'goods_id'=>1,
+			'shop_price'=>1,
 			'promote_price'=>1,
 			//'kk'=>1, 没有该字段不会报错，也不会显示
 			'lv'=>array('$divide'=>array('$shop_price', '$promote_price'))

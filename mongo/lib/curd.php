@@ -67,6 +67,27 @@ class curd extends conn
 		$result = $this->collection->aggregate($condition);
 		return $result;
 	}
+
+	/**
+	 * 获取文档集合名 
+	 * @return string
+	 */
+	public function getCollectionName()
+	{
+		try{
+			$result = $this->collection->getName();
+		}catch(Exception $e){
+			die('Caught exception: getCollectionName fail,',  $e->getMessage(), "\n");
+		}
+		return $result;
+	}
+
+	public function getConnection()
+	{
+		$result = $this->collection->__toString();
+		return $result;
+	}
+
 }
 
 

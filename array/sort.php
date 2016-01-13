@@ -60,6 +60,16 @@ for($i=0;$i<count($arr);$i++)
 }
 var_export($arr);
 
-
+$arr1 = array(46,46,464,15);
+for($i=0; $i< count($arr1); $i++){
+	for($j=0; $j<$i;$j++){
+		if($arr1[$j]<$arr1[$j+1]){
+			$tmp = $arr1[$j];
+			$arr1[$j] = $arr1[$j+1];
+			$arr1[$j+1] = $tmp;
+		}
+	}
+}
+var_dump($arr1);
 
 

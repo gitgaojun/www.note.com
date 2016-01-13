@@ -22,3 +22,25 @@ echo parent_sort($list1, $list2);
 echo "\n";
 
 echo parent_sort($list2, $list1);
+
+echo "\n";
+
+echo <<<EOF
+
+function a(){
+	return;
+}
+<h1>asd</h1>
+EOF;
+
+function a(){
+	return;
+}
+$a = a();
+if($a){
+	echo 'ok';
+}else{
+	echo 'false';
+}
+var_dump($a);
+

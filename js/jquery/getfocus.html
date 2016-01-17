@@ -4,18 +4,64 @@
 <meta charset='utf-8' />
 <title></title>
 <style>
+	*{
+		margin:0 auto;
+		padding:0 auto;
+	}
+	ul{
+		list-style:none;
+		margin:0 auto;
+		padding:0 auto;
+		overflow:auto;
+	}
 	.des{
 		margin:0 auto;width:600px;height:300px;background-color:grey;color:white;
+	}
+	.lilist{
+		width:688px;
+		margin:0 auto;
+		overflow:auto;
+	}
+	.lilist > ul{
+		margin:0 auto;
+	}
+	.list{
+		display:block;
+		float:left;
+		width:200px;
+		height:300px;
+		border:1px grey solid;
+		cursor:pointer;
 	}
 </style>
 <script type="text/javascript" src='../jquery-1.11.2.js'></script>
 <script>
+$(document).ready(function(){
 
+		;(function($){
+
+			$('.list').each(function(){
+				$(this).click(function(){
+					var li_color = prompt('设置背景颜色');
+					$(this).css({
+						'background-color':li_color
+						})
+				});
+			});
+		})(jQuery);
+		});		
 </script>
 </head>
 <body>
 <div class='des'>
-	<span>封装一个jquery组键，当ul中的li被鼠标滑动经过的时候，可以自定义其获取焦点是的背景颜色，即设置表项<li>元素的选中是的背景</span>
+	<span>封装一个jquery组键，当ul中的li被鼠标点击的时候，可以自定义其获取焦点是的背景颜色，即设置表项<li>元素的选中是的背景</span>
+</div>
+<div class='lilist'>
+	<ul>
+		<li class='list'>list 1</li>
+		<li class='list'>list 2</li>
+		<li class='list'>list 3</li>
+	</ul>
 </div>
 </body>
 </html>

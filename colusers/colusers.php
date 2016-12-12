@@ -16,4 +16,7 @@ $echoMessage = function($arg) use ($message) {
   printf($arg.' '.$message);
 };
 
-$echoMessage();
+$echoMessage('hello');
+
+// hello world
+//  use can use the parent arguments

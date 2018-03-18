@@ -2,18 +2,86 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90daa6f0-34fd-46c0-a519-bbdc64815815" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/redis/redisObj.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/log/errorfileforlog.php" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" afterPath="$PROJECT_DIR$/.idea/php.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/www.note.com.iml" afterPath="$PROJECT_DIR$/.idea/www.note.com.iml" />
-      <change beforePath="$PROJECT_DIR$/RabbitMQ/rabbitDB.php" afterPath="$PROJECT_DIR$/RabbitMQ/rabbitDB.php" />
-      <change beforePath="$PROJECT_DIR$/SplDoublyLinkedList/index.php" afterPath="$PROJECT_DIR$/SplDoublyLinkedList/index.php" />
-      <change beforePath="$PROJECT_DIR$/colusers/colusers.php" afterPath="$PROJECT_DIR$/colusers/colusers.php" />
+      <change beforePath="$PROJECT_DIR$/File_General_210_221_8640_2018022413.csv" afterPath="$PROJECT_DIR$/File_General_210_221_8640_2018022413.csv" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/composer.json" afterPath="$PROJECT_DIR$/RabbitMQ/composer.json" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/composer.lock" afterPath="$PROJECT_DIR$/RabbitMQ/composer.lock" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/receive.php" afterPath="$PROJECT_DIR$/RabbitMQ/receive.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/autoload.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/autoload.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/ClassLoader.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/ClassLoader.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/LICENSE" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_classmap.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_classmap.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_namespaces.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_namespaces.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_psr4.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_psr4.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_real.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_real.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_static.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/autoload_static.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/composer/installed.json" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/composer/installed.json" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/.gitmodules" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/.gitmodules" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CHANGELOG.md" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CHANGELOG.md" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CODE_OF_CONDUCT.md" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CODE_OF_CONDUCT.md" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CONTRIBUTING.md" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CONTRIBUTING.md" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CREDITS" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/CREDITS" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/LICENSE" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/LICENSE" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AMQPChannel.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AbstractChannel.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Channel/AbstractChannel.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPConnection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPConnection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazyConnection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazySocketConnection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPLazySocketConnection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPSSLConnection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPSSLConnection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPSocketConnection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPSocketConnection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPStreamConnection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AMQPStreamConnection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Connection/AbstractConnection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPBasicCancelException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPBasicCancelException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPChannelException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPChannelException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPConnectionException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPConnectionException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPExceptionInterface.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPExceptionInterface.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPIOException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPIOException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPIOWaitException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPIOWaitException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPInvalidArgumentException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPInvalidArgumentException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPLogicException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPLogicException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPOutOfBoundsException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPOutOfBoundsException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPOutOfRangeException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPOutOfRangeException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolChannelException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolChannelException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolConnectionException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolConnectionException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPProtocolException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPRuntimeException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPRuntimeException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPTimeoutException.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Exception/AMQPTimeoutException.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/DebugHelper.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/DebugHelper.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/MiscHelper.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/MiscHelper.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/MethodMap080.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/MethodMap080.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/MethodMap091.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/MethodMap091.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Protocol080.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Protocol080.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Protocol091.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Protocol091.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Wait080.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Wait080.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Wait091.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Helper/Protocol/Wait091.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Message/AMQPMessage.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Message/AMQPMessage.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPAbstractCollection.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPAbstractCollection.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPArray.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPArray.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPDecimal.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPDecimal.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPReader.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPReader.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPTable.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPTable.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPWriter.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPWriter.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AbstractClient.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AbstractClient.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/Constants080.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/Constants080.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/Constants091.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/Constants091.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/GenericContent.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/GenericContent.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/AbstractIO.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/AbstractIO.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/SocketIO.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/SocketIO.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/README.md" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/README.md" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/composer.json" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/composer.json" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/spec/amqp-rabbitmq-0.8.json" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/spec/amqp-rabbitmq-0.8.json" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/spec/amqp-rabbitmq-0.9.1.json" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/spec/amqp-rabbitmq-0.9.1.json" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/spec/parser.php" afterPath="$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/spec/parser.php" />
+      <change beforePath="$PROJECT_DIR$/RabbitMQ/worker.php" afterPath="$PROJECT_DIR$/RabbitMQ/worker.php" />
+      <change beforePath="$PROJECT_DIR$/array/.idea/array.iml" afterPath="$PROJECT_DIR$/array/.idea/array.iml" />
+      <change beforePath="$PROJECT_DIR$/array/.idea/modules.xml" afterPath="$PROJECT_DIR$/array/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/array/.idea/workspace.xml" afterPath="$PROJECT_DIR$/array/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/array/array_json.php" afterPath="$PROJECT_DIR$/array/array_json.php" />
+      <change beforePath="$PROJECT_DIR$/redis/redisObj.php" afterPath="$PROJECT_DIR$/redis/redisObj.php" />
     </list>
     <ignored path="www.note.com.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -66,11 +134,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="redisObj.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="redisObj.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/redis/redisObj.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="36">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="errorfileforlog.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/log/errorfileforlog.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="162">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="81" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="standard_4.php" pinned="false" current-in-tab="false">
+        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="451" column="9" lean-forward="true" selection-start-line="451" selection-start-column="9" selection-end-line="451" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -81,26 +169,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1764">
               <caret line="98" column="41" lean-forward="false" selection-start-line="98" selection-start-column="20" selection-end-line="98" selection-end-column="41" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StreamIO.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/IO/StreamIO.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6498">
-              <caret line="365" column="24" lean-forward="false" selection-start-line="365" selection-start-column="24" selection-end-line="365" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AMQPWriter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/RabbitMQ/vendor/php-amqplib/php-amqplib/PhpAmqpLib/Wire/AMQPWriter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="19" column="20" lean-forward="false" selection-start-line="19" selection-start-column="20" selection-end-line="19" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -201,6 +269,7 @@
         <option value="$PROJECT_DIR$/cookie/getcookie.php" />
         <option value="$PROJECT_DIR$/cookie/index.php" />
         <option value="$PROJECT_DIR$/redis/redisObj.php" />
+        <option value="$PROJECT_DIR$/log/errorfileforlog.php" />
       </list>
     </option>
   </component>
@@ -256,8 +325,8 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,28 +402,30 @@
       <workItem from="1519693706177" duration="23000" />
       <workItem from="1519746546401" duration="640000" />
       <workItem from="1519747224032" duration="366000" />
+      <workItem from="1519780736988" duration="613000" />
+      <workItem from="1521372620695" duration="4255000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3843000" />
+    <option name="totallyTimeSpent" value="8711000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="333" y="28" width="1920" height="1018" extended-state="6" />
+    <frame x="0" y="28" width="1920" height="1018" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3828877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29144385" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11830835" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -407,20 +478,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mysql/comm/comm.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="11" column="17" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysql/comm/config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/phpexcel/PHPExcel/Writer/Excel2007.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -768,8 +825,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/redis/redisObj.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="36">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/standard/standard_4.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="451" column="9" lean-forward="true" selection-start-line="451" selection-start-column="9" selection-end-line="451" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/log/errorfileforlog.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="81" />
           <folding />
         </state>
       </provider>

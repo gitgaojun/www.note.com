@@ -1,0 +1,32 @@
+[18-Mar-2018 11:40:24 UTC] PHP Notice:  Undefined variable: asdf in /data/www/www.note.com/log/errorfileforlog.php on line 7
+[18-Mar-2018 11:42:21 UTC] PHP Notice:  Undefined variable: asdf in /data/www/www.note.com/log/errorfileforlog.php on line 7
+[18-Mar-2018 11:50:25 UTC] PHP Notice:  Undefined variable: jj in /data/www/www.note.com/log/errorfileforlog.php on line 7
+[18-Mar-2018 11:50:26 UTC] PHP Notice:  Undefined variable: jj in /data/www/www.note.com/log/errorfileforlog.php on line 7
+[18-Mar-2018 12:06:38 UTC] PHP Notice:  Undefined variable: jj in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:06:39 UTC] PHP Notice:  Undefined variable: jj in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:07:36 UTC] PHP Notice:  Undefined variable: jj in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:07:58 UTC] PHP Notice:  Undefined variable: jj in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:08:36 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aa() in /data/www/www.note.com/log/errorfileforlog.php:10
+Stack trace:
+#0 {main}
+  thrown in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:08:37 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function aa() in /data/www/www.note.com/log/errorfileforlog.php:10
+Stack trace:
+#0 {main}
+  thrown in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:42:25 UTC] PHP Fatal error:  Uncaught Exception: 3333 in /data/www/www.note.com/log/errorfileforlog.php:10
+Stack trace:
+#0 {main}
+  thrown in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:42:26 UTC] PHP Fatal error:  Uncaught Exception: 3333 in /data/www/www.note.com/log/errorfileforlog.php:10
+Stack trace:
+#0 {main}
+  thrown in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:42:27 UTC] PHP Fatal error:  Uncaught Exception: 3333 in /data/www/www.note.com/log/errorfileforlog.php:10
+Stack trace:
+#0 {main}
+  thrown in /data/www/www.note.com/log/errorfileforlog.php on line 10
+[18-Mar-2018 12:42:29 UTC] PHP Fatal error:  Uncaught Exception: 3333 in /data/www/www.note.com/log/errorfileforlog.php:10
+Stack trace:
+#0 {main}
+  thrown in /data/www/www.note.com/log/errorfileforlog.php on line 10
